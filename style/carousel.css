@@ -1,0 +1,25 @@
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 230px;
+}
+.carousel> div{
+    position: relative;
+    width: 1200px;
+    height: 230px;
+
+}
+
+.carousel img{
+   float: left;
+}
+.carousel ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+}
+.carousel ul>li{
+    display: inline;
+}

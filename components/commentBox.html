@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>commentBox</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        #commentBox{
+            width: 400px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+        .main{
+            margin-top: 100px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div>
+        <label>字体大小</label>
+        <button id="smaller">-</button>
+        <button id="bigger">+</button>
+    </div>
+    <textarea id="commentBox"></textarea>
+</div>
+
+
+<script>
+    $("#commentBox").css({resize:"none"});
+    $("#bigger").click(function(){
+
+        $("#commentBox").css({fontSize:function(index,val){
+            return parseInt(val)*1.5;
+        }})
+        console.log($("#commentBox").scrollTop())
+
+    });
+    $("#smaller").click(function(){
+        $("#commentBox").css({fontSize:function(index,val){
+            return parseInt(val)/1.5;
+        }})
+    });
+</script>
+</body>
+</html>

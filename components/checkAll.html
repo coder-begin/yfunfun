@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选/全不选</title>
+    <script src="../js/angular.mini.js"></script>
+</head>
+<body ng-app="test">
+
+<div ng-controller="checkAll">
+    <input type="checkbox" ng-model="all">
+    <span ng-bind="all?'全不选':'全选'"></span>
+    <div>
+        <input type="checkbox" ng-checked="all"><label>电脑</label>
+        <input type="checkbox" ng-checked="all"><label>足球</label>
+        <input type="checkbox" ng-checked="all"><label>篮球</label>
+        <input type="checkbox" ng-checked="all"><label>排球</label>
+    </div>
+</div>
+<script>
+    var m=angular.module("test",[]);
+    m.controller("checkAll",["$scope",function($scope){
+            $scope.all=false;
+    }])
+
+</script>
+</body>
+</html>

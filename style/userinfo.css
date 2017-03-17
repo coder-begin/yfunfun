@@ -1,0 +1,94 @@
+.infoHead{
+    border:1px solid #5cb85c;
+    font-size: 16px;
+    color: #285e8e;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+.infoBody{
+    border:1px solid #5cb85c;
+    width: 50%;
+    height: 840px;
+    background-color: #e1edf7;
+}
+.baseInfoHead{
+    width: 98%;
+    height: 25%;
+    background-color: white;
+    border: 1px solid #5cb85c;
+    margin: 1%;
+}
+.base_head{
+    margin: 6px 0 6px 20px;
+    line-height: 1;
+    font-size: 14px;
+    color: #2b542c;
+
+
+}
+.base_body{
+    position: absolute;
+}
+.base_body>div:first-child{
+    margin: 15px;
+
+}
+.base_body>div:nth-of-type(2){
+   position:absolute;
+    top: 25%;
+    left: 20%;
+}
+.base_body>div:nth-of-type(2)>div{
+    font-size: 16px;
+    color: #357ebd;
+}
+.base_body>div:nth-of-type(3){
+        width: 100%;
+        margin-top: 30px;
+    margin-left: 30px;
+}
+.baseInfoBody{
+
+    width: 98%;
+    margin: 1%;
+    height: 72%;
+    border: 1px solid #5cb85c;
+}
+.baseInfoBody >div:last-child{
+    margin: 4%;
+}
+.baseInfoBody >div:last-child input{
+    border: 1px solid #357ebd;
+}
+.focus{
+    border: 1px solid yellow;
+    background-color: #3c763d;
+}
+.baseInfoBody >div:last-child>div{
+    margin-top: 20px;
+}
+.baseInfoBody >div:last-child>div:nth-of-type(2)>select{
+
+    width: 160px;
+}
+.baseInfoBody >div:last-child>div:nth-of-type(3)>select{
+
+    width: 160px;
+}
+.baseInfoBody >div:last-child>div:nth-of-type(4)>select{
+
+    width: 120px;
+}
+.birthDay input{
+    width: 100px;
+    text-align: center;
+}
+.userDescripe textarea{
+    resize: none;
+    height: 150px;
+    width: 300px;
+    vertical-align: text-top;
+}
+

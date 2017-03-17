@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userInfo</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../style/userinfo.css">
+    <link rel="stylesheet" href="../style/calendar.css">
+
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+</head>
+<body>
+<div class="infoHead">
+    <strong>编辑资料</strong>
+</div>
+<div class="infoBody">
+    <div class="baseInfoHead">
+        <div class="base_head">
+            <span>||</span>
+            <strong>基本信息</strong>
+        </div>
+        <div class="base_body">
+            <div>
+                <img src="../imgs/3v5.PNG" class="img-circle" width="15%" height="15%">
+            </div>
+            <div>
+                <div><strong>rulersex</strong></div>
+                <div>创建于:2016.1.1</div>
+                <div>简介:<span id="introduce"></span></div>
+            </div>
+            <div>
+                <button>修改头像</button>
+                <button>修改签名</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="baseInfoBody">
+        <div class="base_head">
+            <span>||</span>
+            <strong>扩展信息</strong>
+        </div>
+        <div>
+            <div>
+                <span>真实姓名:&nbsp;&nbsp;&nbsp;</span><input type="text" placeholder="请填入真实姓名">
+            </div>
+            <div>
+                <span> &nbsp;&nbsp;性别: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <select>
+                    <option selected>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+            <div>
+                <span> &nbsp;性取向:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <select>
+                    <option selected>男</option>
+                    <option>女</option>
+                    <option>中性</option>
+                </select>
+            </div>
+            <div>
+                <span> &nbsp;&nbsp;&nbsp;省:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <select class="provincial ">
+                    <option >江苏</option>
+                    <option selected>北京</option>
+                    <option>上海</option>
+                    <option>深圳</option>
+                    <option>广州</option>
+                    <option>山东</option>
+                </select>
+                <span> &nbsp;&nbsp;&nbsp;市:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <select  class="city">
+
+                </select>
+            </div>
+            <div class="birthDay">
+                <span>出生日期: &nbsp;&nbsp;&nbsp;</span>
+                <input type="button" >
+                <div class="calendar">
+                    <div class="head">
+                        <button> << </button><button></button><button> >> </button>
+                    </div>
+                    <div>
+                        <table>
+                            <thead class="table-head">
+                            <tr>
+                                <td><button>一</button></td>
+                                <td><button>二</button></td>
+                                <td><button>三</button></td>
+                                <td><button>四</button></td>
+                                <td><button>五</button></td>
+                                <td><button>六</button></td>
+                                <td><button>日</button></td>
+                            </tr>
+                            </thead>
+                            <tbody class="table-body">
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hobbies">
+                <div>
+                    <span>你的爱好是?&nbsp;&nbsp;&nbsp;</span>
+                    <input type="checkbox" id="checkall"><label for="checkall">全选/全不选</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="swim"><label for="swim">游泳</label>
+                    <input type="checkbox" id="computer"><label for="computer">计算机</label>
+                    <input type="checkbox" id="baseball"><label for="baseball">打排球</label>
+                    <input type="checkbox" id="basketball"><label for="basketball">打篮球</label>
+                    <input type="checkbox" id="it"><label for="it">编程</label>
+                    <input type="checkbox" id="trivial"><label for="trivial">旅游</label>
+                </div>
+            </div>
+            <div>
+                <input type="button" id="submit" value="提交">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="../js/calendar.js"></script>
+<script src="../js/userinfo.js"></script>
+</body>
+</html>

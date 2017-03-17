@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>e-mail</title>
+    <script src="../js/angular.js"></script>
+    <script src="../js/jquery.js"></script>
+    <style>
+        .email >ul{
+            list-style-type: none;
+        }
+        .email >ul>li>button{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+<div ng-app="index">
+    <div ng-controller="e_mail" id="e-mail" class="email">
+        <div>
+            <input type="text" ng-model="email" placeholder="输入邮箱">
+        </div>
+        <ul>
+            <li>
+                <button>{{email}}&nbsp;&nbsp;@qq.com</button>
+            </li>
+            <li>
+                <button>{{email}}&nbsp;&nbsp;@163.com</button>
+            </li>
+            <li>
+                <button>{{email}}&nbsp;&nbsp;@126.com</button>
+            </li>
+            <li>
+                <button>{{email}}&nbsp;&nbsp;@outlook.com</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<script>
+    var index=angular.module("index",[]);
+    index.controller("e_mail",["$scope",function($scope){
+        $scope.email="";
+    }]);
+    $("#e-mail").children("ul").hide().end().focusin(function(){
+        $("#e-mail").children("ul").show()
+    });
+    $("#e-mail >ul>li button").click(function(){
+        $("#e-mail").children("ul").hide()
+    });
+
+
+</script>
+</html>

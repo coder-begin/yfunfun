@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>userInfo</title>
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../style/userinfo.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+
+</head>
+<body>
+<div class="infoHead">
+    <a href="userinfo.html"><strong>编辑资料</strong></a>
+</div>
+<div class="infoBody">
+    <div class="baseInfoHead">
+        <div class="base_head">
+            <span>||</span>
+            <strong>基本信息</strong>
+        </div>
+        <div class="base_body">
+            <div>
+                <img src="../imgs/3v5.PNG" class="img-circle" width="15%" height="15%">
+            </div>
+            <div>
+                <div><strong id="userName"></strong></div>
+                <div>创建于:<span id="createTime"></span></div>
+                <div>简介:<span id="userIntroduce"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="baseInfoBody">
+        <div class="base_head">
+            <span>||</span>
+            <strong>扩展信息</strong>
+        </div>
+        <div>
+            <div>
+                <span>真实姓名:&nbsp;&nbsp;&nbsp;</span>
+                <span id="userRealName"></span>
+            </div>
+            <div>
+                <span> &nbsp;&nbsp;性别: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="userSex"></span>
+            </div>
+            <div>
+                <span> &nbsp;性取向:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+               <span id="userSexLove"></span>
+            </div>
+            <div>
+                <span> &nbsp;&nbsp;地址:&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span id="userAddress"></span>
+            </div>
+            <div class="birthDay">
+                <span>出生日期: &nbsp;&nbsp;&nbsp;</span>
+                <span id="userBirthday"></span>
+            </div>
+
+            <div class="hobbies">
+                <div>
+                    <span>爱好:&nbsp;&nbsp;&nbsp;</span>
+                   <span id="userHobbies"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/user-info.js"></script>
+</body>
+</html>

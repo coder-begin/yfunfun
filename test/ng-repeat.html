@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/angular.js"></script>
+</head>
+<body>
+    <div ng-app="test">
+        
+        <ul ng-controller="list">
+            <li ng-repeat="v in data track by $index">
+                <img src="{{v}}">
+            </li>
+        </ul>
+    </div>
+<script>
+    var  m=angular.module("test",[]);
+    m.controller("list", ["$scope",function($scope){
+        $scope.data=["../imgs/3-5.PNG","../imgs/3v5.PNG","../imgs/blackcar.png","../imgs/erwei.png","../imgs/icon.jpg"];
+    }]);
+
+</script>
+</body>
+</html>

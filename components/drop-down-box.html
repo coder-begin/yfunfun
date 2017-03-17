@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>drop-down-box</title>
+    <script src="../js/jquery.js"></script>
+    <style>
+        .drop_down_box{
+            position: absolute;
+        }
+        .drop_down_box>div{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <button id="btn">下滑</button>
+</div>
+    <div class="drop_down_box">
+
+           <div>
+               <button>收益</button>
+
+           </div>
+           <div>
+               <button>测测</button>
+
+           </div>
+           <div>
+               <button>冷热</button>
+
+           </div>
+           <div>
+               <button>骗人</button>
+           </div>
+           <div>
+               <button>某个</button>
+
+           </div>
+
+    </div>
+
+
+
+<script>
+    var flag=false;
+
+        $("#btn").click(function(){
+            $(".drop_down_box").slideToggle("fast","linear");
+
+        });
+
+
+
+</script>
+</body>
+</html>

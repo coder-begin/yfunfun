@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="shortcut icon" href="imgs/icon.png">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/login.css">
+    <script src="js/jquery.js"></script>
+
+</head>
+<body>
+<div class="index-header">
+    <div class="nav navbar-fixed-top">
+        <div class="navbar-header">
+            <div class="navbar-brand">
+                <a href="#">
+                    <img href="imgs/icon.png" width="25px" height="25px">
+                </a>
+            </div>
+        </div>
+        <div>
+            <button>主站</button>
+            <button>绘画</button>
+            <button>游戏中心</button>
+            <button>直播</button>
+            <button>周边</button>
+        </div>
+        <div class="navbar-form search">
+            <div class="input-group hidden-sm hidden-xs">
+                <input type="text" class="form-control">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </span>
+            </div>
+            <div>
+                <button id="login">登陆</button>
+                <span>|</span>
+                <button id="register">注册</button>
+                <button id="submission">投稿</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="login-body">
+    <hr>
+    <p>
+        登陆
+    </p>
+    <hr>
+    <div>
+        <img src="imgs/slider_1.png">
+    </div>
+    <div class="login-info">
+            <form   id="loginInfo">
+               <div class="input-distance">
+                   <input id="userAgent" name="user_name" class="input-info" type="text" placeholder="你的手机号/邮箱..">
+               </div>
+                <div class="input-distance" >
+                    <input id="userPass" name="user_passwords" class="input-info" type="password" placeholder="密码">
+                </div>
+                <div>
+                    <input id="verificate" name="verification_code" class="verification" type="text" placeholder="验证码">
+                    <img class="verification-img" src="imgs/icon.png" width="60px" height="40px">
+                    <a href="#">换一个</a>
+                </div>
+                <div class="saveUserInfo">
+                    <input id="saveUserInfo" type="checkbox"><span>&nbsp;&nbsp;&nbsp;&nbsp;记住我!</span>
+                </div>
+                <div>
+                    <button id="login-body" class="btn btn-info btn-size">登陆</button>
+                    <button id="register-body" class="btn btn-default btn-size">注册</button>
+                </div>
+
+            </form>
+    </div>
+
+</div>
+<div class="sponsor">
+    <img src="imgs/slider_1.png" width="100%">
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>

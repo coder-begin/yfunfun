@@ -1,0 +1,28 @@
+
+.calendar{
+    position: absolute;
+
+}
+.table-head td{
+    text-align: center;
+    position: relative;
+}
+.table-body td{
+    text-align: center;
+    position: relative;
+
+}
+.table-head td button{
+    width: 40px;
+}
+.table-body td button{
+    width: 40px;
+
+}
+.head {
+
+  position: relative;
+}
+.head button:nth-of-type(2){
+    width: 217px;
+}
